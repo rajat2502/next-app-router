@@ -23,7 +23,9 @@ const Home = async () => {
 
 const Poster = async () => {
   const data = await deferredRequests();
+  // @ts-expect-error
   const posts = data[0];
+  // @ts-expect-error
   const time = data[1];
   return (
     <>

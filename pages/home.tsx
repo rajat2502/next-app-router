@@ -22,6 +22,7 @@ export const getServerSideProps = async () => {
     deferredRequests(),
     fetchHeroImage(),
   ]);
+  // @ts-expect-error
   const [posts, time] = data;
 
   return {
